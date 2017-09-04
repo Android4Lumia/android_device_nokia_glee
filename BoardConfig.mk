@@ -15,7 +15,7 @@
 #
 
 # Board device path
-DEVICE_PATH := device/nokia/fame
+DEVICE_PATH := device/nokia/glee
 
 -include device/nokia/lumia_8930-common/BoardConfigCommon.mk
 
@@ -31,12 +31,12 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Healthd
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BACKLIGHT_PATH := /sys/class/backlight/msmfb_bl0/brightness
-PRODUCT_DEVICE := fame
-PRODUCT_NAME := lineage_fame
-PRODUCT_MODEL := fame
+PRODUCT_DEVICE := glee
+PRODUCT_NAME := lineage_glee
+PRODUCT_MODEL := glee
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := fame_cmcc,fame_lta,fame_row,fame_tmo,glee_cmcc,glee_row
+TARGET_OTA_ASSERT_DEVICE := glee_cmcc,glee_row
 
 # Partitions informations
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 6149881344
@@ -48,10 +48,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 QCOM_FM_ENABLED := true
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := lineage_fame_defconfig
+TARGET_KERNEL_CONFIG := lineage_glee_defconfig
 
 # Vendor platform
-BOARD_VENDOR_PLATFORM := fame
+BOARD_VENDOR_PLATFORM := glee
 
 # Audio configurations
 BOARD_USES_ALSA_AUDIO := true

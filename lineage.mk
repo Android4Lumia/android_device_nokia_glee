@@ -18,15 +18,15 @@
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configurations
-$(call inherit-product, device/nokia/fame/device.mk)
+$(call inherit-product, device/nokia/glee/device.mk)
 
 # Device display
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
 # Device identifications
-PRODUCT_DEVICE := fame
-PRODUCT_NAME := lineage_fame
+PRODUCT_DEVICE := glee
+PRODUCT_NAME := lineage_glee
 PRODUCT_BRAND := Nokia
 PRODUCT_MANUFACTURER := Nokia
-PRODUCT_MODEL := fame
+PRODUCT_MODEL := glee

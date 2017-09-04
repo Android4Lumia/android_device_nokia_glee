@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(BOARD_VENDOR_PLATFORM),fame)
+ifeq ($(BOARD_VENDOR_PLATFORM),glee)
 
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 

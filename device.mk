@@ -25,7 +25,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Dalvik heap configurations
-$(call inherit-product-if-exists, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # Audio configurations
 PRODUCT_COPY_FILES += \
@@ -212,5 +212,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(LOCAL_PATH)/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny
 
-# Vendor product configurations
+# Vendor product configurations - glee and fame use the same blobs, no need for a glee vendor repo
 $(call inherit-product, vendor/nokia/fame/fame-vendor.mk)
